@@ -26,7 +26,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="10"
-            android:background="@drawable/black-button" />
+            android:background="@drawable/button" />
 
 
   <!--  </LinerarLayout> -->
