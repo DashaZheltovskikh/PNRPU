@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#000000"
-    android:orientation="vertical">
-    <!-- tools:context="pnrpu.bestgameever.ru.pnrpu.MainActivity" -->
+    android:orientation="vertical"
+    tools:context="pnrpu.bestgameever.ru.pnrpu.MainActivity">  <!-- -->
 
 
 
@@ -21,7 +21,7 @@
             android:layout_weight="1"
             android:background="@drawable/menu" />
 
-    <ImageView
+    <Button
             android:id="@+id/menuPNRPUbut"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
