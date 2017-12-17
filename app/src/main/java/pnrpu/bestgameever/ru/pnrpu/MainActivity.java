@@ -1,5 +1,6 @@
 package pnrpu.bestgameever.ru.pnrpu;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -17,6 +18,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                // while (startButton.isPressed() == true) {
                     startButton.setBackgroundResource(R.drawable.button_press);
+                try {
+                    Intent intent = new Intent(MainActivity.this, FirstLevel.class);
+                    startActivity(intent);
+                    finish();
+                }
+                catch (Exception e) {
+                    e.printStackTrace();
+                }
               //  }
             }
         });
