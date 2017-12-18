@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">PNRPU</string>
+    <string name="here_we_go">Here we go!</string>
+    <string name="button">Button</string>
 </resources>

@@ -8,17 +8,16 @@
     android:orientation="vertical"
     tools:context="pnrpu.bestgameever.ru.pnrpu.MainActivity">  <!-- -->
 
-
-  <!--   <TextView
-        android:id="@+id/GO"
-        android:layout_width="match_parent"
-        android:layout_height="292dp"
-        android:text="@string/here_we_go" />
-  -->
     <Button
-        android:id="@+id/button"
+        android:id="@+id/newGameButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/button" />
-  </LinearLayout>
+        android:background="@drawable/new_game_button" />
+
+    <Button
+        android:id="@+id/loadGameButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/load_game_button" />
+</LinearLayout>
 

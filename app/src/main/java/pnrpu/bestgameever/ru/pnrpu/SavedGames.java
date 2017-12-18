@@ -6,28 +6,28 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class SavedGames extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        final Button startButton = (Button)findViewById(R.id.menuPNRPUbut);
-        startButton.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.saved_games);
+        final Button okButtonSG = (Button)findViewById(R.id.okButtonSG);
+        okButtonSG.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               // while (startButton.isPressed() == true) {
-                    startButton.setBackgroundResource(R.drawable.button_press);
+
+                okButtonSG.setBackgroundResource(R.drawable.ok_play_button);
                 try {
-                    Intent intent = new Intent(MainActivity.this, ModeSelection.class);
+                    Intent intent = new Intent(SavedGames.this, FirstLevel.class);
                     startActivity(intent);
                     finish();
                 }
                 catch (Exception e) {
                     e.printStackTrace();
                 }
-              //  }
             }
+
         });
     }
 }

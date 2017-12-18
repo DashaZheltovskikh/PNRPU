@@ -8,17 +8,23 @@
     android:orientation="vertical"
     tools:context="pnrpu.bestgameever.ru.pnrpu.MainActivity">  <!-- -->
 
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="406dp">
 
-  <!--   <TextView
-        android:id="@+id/GO"
-        android:layout_width="match_parent"
-        android:layout_height="292dp"
-        android:text="@string/here_we_go" />
-  -->
-    <Button
-        android:id="@+id/button"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/button" />
-  </LinearLayout>
+        android:orientation="vertical">
+
+    </LinearLayout>
+  </ScrollView>
+
+  <Button
+      android:id="@+id/okButtonSG"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@drawable/ok_button" />
+
+</LinearLayout>
 
