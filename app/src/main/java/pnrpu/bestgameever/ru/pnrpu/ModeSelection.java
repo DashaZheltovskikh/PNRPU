@@ -17,7 +17,7 @@ public class ModeSelection extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // while (startButton.isPressed() == true) {
-                newGameButton.setBackgroundResource(R.drawable.ok_play_button);
+                newGameButton.setBackgroundResource(R.drawable.new_game_button_press);
                 try {
                     Intent intent = new Intent(ModeSelection.this, ModeSelection.class);
                     startActivity(intent);
@@ -34,7 +34,7 @@ public class ModeSelection extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // while (startButton.isPressed() == true) {
-                loadGameButton.setBackgroundResource(R.drawable.ok_play_button);
+                loadGameButton.setBackgroundResource(R.drawable.load_game_button_press);
                 try {
                     Intent intent = new Intent(ModeSelection.this, SavedGames.class);
                     startActivity(intent);

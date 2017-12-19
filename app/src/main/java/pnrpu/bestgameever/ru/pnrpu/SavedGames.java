@@ -12,12 +12,12 @@ public class SavedGames extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.saved_games);
-        final Button okButtonSG = (Button)findViewById(R.id.okButtonSG);
-        okButtonSG.setOnClickListener(new View.OnClickListener() {
+        final Button yesButtonSG = (Button)findViewById(R.id.yesButtonSG);
+        yesButtonSG.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                okButtonSG.setBackgroundResource(R.drawable.ok_play_button);
+                yesButtonSG.setBackgroundResource(R.drawable.yes_button_press);
                 try {
                     Intent intent = new Intent(SavedGames.this, FirstLevel.class);
                     startActivity(intent);

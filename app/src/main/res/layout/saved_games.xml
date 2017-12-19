@@ -21,10 +21,10 @@
   </ScrollView>
 
   <Button
-      android:id="@+id/okButtonSG"
+      android:id="@+id/yesButtonSG"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:background="@drawable/ok_button" />
+      android:background="@drawable/yes_button" />
 
 </LinearLayout>
 
