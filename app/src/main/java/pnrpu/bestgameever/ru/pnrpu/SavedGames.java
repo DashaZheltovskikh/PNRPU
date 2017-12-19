@@ -12,6 +12,23 @@ public class SavedGames extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.saved_games);
+        /*final Button button3 = (Button)findViewById(R.id.button3);
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                button3.setBackgroundResource(R.drawable.button_press);
+                try {
+                    Intent intent = new Intent(SavedGames.this, FirstLevel.class);
+                    startActivity(intent);
+                    finish();
+                }
+                catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+
+        });*/
         final Button yesButtonSG = (Button)findViewById(R.id.yesButtonSG);
         yesButtonSG.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -19,7 +36,7 @@ public class SavedGames extends AppCompatActivity {
 
                 yesButtonSG.setBackgroundResource(R.drawable.yes_button_press);
                 try {
-                    Intent intent = new Intent(SavedGames.this, FirstLevel.class);
+                    Intent intent = new Intent(SavedGames.this, ModeSelection.class);
                     startActivity(intent);
                     finish();
                 }
