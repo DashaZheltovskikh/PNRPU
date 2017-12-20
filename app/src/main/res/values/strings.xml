@@ -1,5 +1,8 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">PNRPU</string>
     <string name="here_we_go">Here we go!</string>
-    <string name="button">Button</string>
+    <string name="button"></string>
+    <string name="textview">TextView</string>
+
+
 </resources>

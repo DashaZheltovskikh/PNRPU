@@ -36,7 +36,7 @@ public class ModeSelection extends AppCompatActivity {
                 // while (startButton.isPressed() == true) {
                 loadGameButton.setBackgroundResource(R.drawable.load_game_button_press);
                 try {
-                    Intent intent = new Intent(ModeSelection.this, SavedGames.class);
+                    Intent intent = new Intent(ModeSelection.this, FirstLevel.class);
                     startActivity(intent);
                     finish();
                 }
