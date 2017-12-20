@@ -19,7 +19,11 @@ public class ModeSelection extends AppCompatActivity {
                 // while (startButton.isPressed() == true) {
                 newGameButton.setBackgroundResource(R.drawable.new_game_button_press);
                 try {
+<<<<<<< HEAD
                     Intent intent = new Intent(ModeSelection.this, MainTwo.class);
+=======
+                    Intent intent = new Intent(ModeSelection.this, One_level.class);
+>>>>>>> VM
                     startActivity(intent);
                     finish();
                 }

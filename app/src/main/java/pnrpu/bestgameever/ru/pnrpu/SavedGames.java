@@ -41,11 +41,17 @@ public class SavedGames extends AppCompatActivity {
                 yesButtonSG.setBackgroundResource(R.drawable.yes_button_press);
                 yes[0] = 1;
                 try {
+<<<<<<< HEAD
                     if (b3[0] == 1 && yes[0] == 1) {
                         Intent intent = new Intent(SavedGames.this, ModeSelection.class);
                         startActivity(intent);
                         finish();
                     }
+=======
+                    Intent intent = new Intent(SavedGames.this, One_level.class);
+                    startActivity(intent);
+                    finish();
+>>>>>>> VM
                 }
                 catch (Exception e) {
                     e.printStackTrace();
