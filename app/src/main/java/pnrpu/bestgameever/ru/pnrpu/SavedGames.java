@@ -35,7 +35,7 @@ public class SavedGames extends AppCompatActivity {
             public void onClick(View v) {
                 yesButtonSG.setBackgroundResource(R.drawable.yes_button_press);
                 try {
-                    Intent intent = new Intent(SavedGames.this, ModeSelection.class);
+                    Intent intent = new Intent(SavedGames.this, One_level.class);
                     startActivity(intent);
                     finish();
                 }
