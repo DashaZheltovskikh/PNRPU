@@ -37,6 +37,10 @@ public class SavedGames extends AppCompatActivity {
                 try {
                     Intent intent = new Intent(SavedGames.this, ModeSelection.class);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 28eca83185a11f381eb784b291e4123ee802abd3
                     startActivity(intent);
                     finish();
                 }
@@ -54,8 +58,12 @@ public class SavedGames extends AppCompatActivity {
                 deleteButtonSG.setBackgroundResource(R.drawable.delete_button_press);
                 try {
                     Intent intent = new Intent(SavedGames.this, ModeSelection.class);
+<<<<<<< HEAD
 =======
 >>>>>>> 1a6038648d7075a895d0afc45ea315d7b040e2dd
+=======
+>>>>>>> VM
+>>>>>>> 28eca83185a11f381eb784b291e4123ee802abd3
                     startActivity(intent);
                     finish();
                 }
