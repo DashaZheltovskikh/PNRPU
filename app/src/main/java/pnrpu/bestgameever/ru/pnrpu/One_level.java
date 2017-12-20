@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class One_level extends AppCompatActivity {
 
@@ -38,6 +39,9 @@ public class One_level extends AppCompatActivity {
                     Intent intent = new Intent(One_level.this, ModeSelection.class);
                     startActivity(intent);
                     finish();
+                    Toast toast = Toast.makeText(getApplicationContext(),
+                            "Неверный ответ, вы отчислены", Toast.LENGTH_SHORT);
+                    toast.show();
                 }
                 catch (Exception e) {
                     e.printStackTrace();
@@ -72,6 +76,9 @@ public class One_level extends AppCompatActivity {
                     Intent intent = new Intent(One_level.this, ModeSelection.class);
                     startActivity(intent);
                     finish();
+                    Toast toast = Toast.makeText(getApplicationContext(),
+                            "Неверный ответ, вы отчислены", Toast.LENGTH_SHORT);
+                    toast.show();
                 }
                 catch (Exception e) {
                     e.printStackTrace();

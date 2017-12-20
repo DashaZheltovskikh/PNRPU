@@ -70,7 +70,7 @@ public class MainTwo extends Activity implements OnClickListener{
             }
             // закрываем подключение к БД
             dbHelper.close();
-            Intent intent = new Intent(MainTwo.this, ModeSelection.class);
+            Intent intent = new Intent(MainTwo.this, One_level.class);
             startActivity(intent);
             //
             //c.getCount();
@@ -104,23 +104,23 @@ public class MainTwo extends Activity implements OnClickListener{
     }
 
     public void addName(ArrayList<String> name) {
-        if (SavedGames.name3 != "test3") {
+        if (SavedGames.name3 == "test3") {
             String strName = name.toString();
             SavedGames.name3 = strName;
         }
-        if (SavedGames.name4 != "test3") {
+        else if (SavedGames.name4 == "test4") {
             String strName = name.toString();
             SavedGames.name4 = strName;
         }
-        if (SavedGames.name5 != "test3") {
+        else if (SavedGames.name5 == "test5") {
             String strName = name.toString();
             SavedGames.name5 = strName;
         }
-        if (SavedGames.name6 != "test3") {
+        else if (SavedGames.name6 == "test6") {
             String strName = name.toString();
             SavedGames.name6 = strName;
         }
-        if (SavedGames.name7 != "test3") {
+        else if (SavedGames.name7 == "test7") {
             String strName = name.toString();
             SavedGames.name7 = strName;
         }

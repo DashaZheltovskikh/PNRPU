@@ -32,9 +32,13 @@
             </intent-filter>
         </activity>
 
-<<<<<<< HEAD
         <activity android:name=".MainTwo"
-=======
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
         <activity android:name=".One_level"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -50,7 +54,6 @@
         </activity>
 
         <activity android:name=".Three_level"
->>>>>>> VM
             android:screenOrientation="portrait">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
