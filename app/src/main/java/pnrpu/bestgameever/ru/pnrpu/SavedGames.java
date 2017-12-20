@@ -1,6 +1,7 @@
 package pnrpu.bestgameever.ru.pnrpu;
 
 import android.content.Intent;
+import android.database.CharArrayBuffer;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
@@ -13,6 +14,11 @@ import android.widget.Button;
 import java.time.OffsetDateTime;
 
 public class SavedGames extends AppCompatActivity {
+    static String name3;
+    static String name4;
+    static String name5;
+    static String name6;
+    static String name7;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +28,7 @@ public class SavedGames extends AppCompatActivity {
         final int[] b5 = new int[1];
         final int[] b6 = new int[1];
         final int[] b7 = new int[1];*/
+
         final int[] yes = {0};
         super.onCreate(savedInstanceState);
         setContentView(R.layout.saved_games);
@@ -71,7 +78,8 @@ public class SavedGames extends AppCompatActivity {
             public void onClick(View v) {
                 button3.setBackgroundResource(R.drawable.delete_button_press);
                 b3[0] = 1;
-                button3.setText("dfb");
+                button3.setText(name3);
+                //button3.setText();
             }
 
         });
@@ -81,6 +89,7 @@ public class SavedGames extends AppCompatActivity {
             public void onClick(View v) {
                 button4.setBackgroundResource(R.drawable.delete_button_press);
                 b3[0] = 1;
+                button4.setText(name4);
             }
 
         });
@@ -90,6 +99,7 @@ public class SavedGames extends AppCompatActivity {
             public void onClick(View v) {
                 button5.setBackgroundResource(R.drawable.delete_button_press);
                 b3[0] = 1;
+                button5.setText(name5);
             }
 
         });
@@ -99,6 +109,7 @@ public class SavedGames extends AppCompatActivity {
             public void onClick(View v) {
                 button6.setBackgroundResource(R.drawable.delete_button_press);
                 b3[0] = 1;
+                button6.setText(name6);
             }
 
         });
@@ -108,33 +119,12 @@ public class SavedGames extends AppCompatActivity {
             public void onClick(View v) {
                 button7.setBackgroundResource(R.drawable.delete_button_press);
                 b3[0] = 1;
+                button7.setText(name7);
             }
 
         });
 
         //
-        // делаем запрос всех данных из таблицы mytable, получаем Cursor
-        /*Cursor c = db.query("mytable", null, null, null, null, null, null);
 
-      // ставим позицию курсора на первую строку выборки
-      // если в выборке нет строк, вернется false
-      if (c.moveToFirst()) {
-
-        // определяем номера столбцов по имени в выборке
-        int idColIndex = c.getColumnIndex("id");
-        int nameColIndex = c.getColumnIndex("name");
-        int emailColIndex = c.getColumnIndex("email");
-
-        do {
-          // получаем значения по номерам столбцов и пишем все в лог
-          Log.d(LOG_TAG,
-              "ID = " + c.getInt(idColIndex) +
-              ", name = " + c.getString(nameColIndex) +
-              ", email = " + c.getString(emailColIndex));
-          // переход на следующую строку
-          // а если следующей нет (текущая - последняя), то false - выходим из цикла
-        } while (c.moveToNext());
-      } else
-        Log.d(LOG_TAG, "0 rows");*/
     }
 }
