@@ -33,10 +33,29 @@ public class SavedGames extends AppCompatActivity {
         yesButtonSG.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 yesButtonSG.setBackgroundResource(R.drawable.yes_button_press);
                 try {
                     Intent intent = new Intent(SavedGames.this, ModeSelection.class);
+<<<<<<< HEAD
+=======
+                    startActivity(intent);
+                    finish();
+                }
+                catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+
+        });
+
+        final Button deleteButtonSG = (Button)findViewById(R.id.deleteButtonSG);
+        deleteButtonSG.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                deleteButtonSG.setBackgroundResource(R.drawable.delete_button_press);
+                try {
+                    Intent intent = new Intent(SavedGames.this, ModeSelection.class);
+>>>>>>> VM
                     startActivity(intent);
                     finish();
                 }
