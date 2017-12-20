@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffffff"
+    android:background="#000000"
     android:orientation="vertical"
     tools:context="pnrpu.bestgameever.ru.pnrpu.MainActivity">  <!-- -->
 
@@ -20,11 +20,27 @@
     </LinearLayout>
   </ScrollView>
 
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
   <Button
       android:id="@+id/yesButtonSG"
-      android:layout_width="match_parent"
+      android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:background="@drawable/yes_button" />
+      android:background="@drawable/yes_button"
+      android:layout_marginLeft="205dp"
+      android:layout_marginTop="30dp"/>
 
+
+  <Button
+      android:id="@+id/deleteButtonSG"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@drawable/delete_button"
+      android:layout_marginLeft="40dp"
+      android:layout_marginTop="30dp"
+      />
+  </RelativeLayout>
 </LinearLayout>
 
