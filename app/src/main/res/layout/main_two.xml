@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#000000">
+
     <LinearLayout
         android:id="@+id/linearLayout1"
         android:layout_width="match_parent"
@@ -13,6 +15,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/name"
+            android:textColor="#ffffff"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp">
         </TextView>
@@ -21,7 +24,9 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:inputType="">
+            android:inputType=""
+           android:background="#ffffff">
+
             <requestFocus>
             </requestFocus>
         </EditText>
@@ -34,6 +39,7 @@
                   android:id="@+id/btnAdd"
                   android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
+                  android:textColor="#ffffff"
                   android:text="@string/add"
                   style="?android:attr/buttonBarButtonStyle">
               </Button>

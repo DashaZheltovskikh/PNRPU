@@ -15,7 +15,6 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class MainTwo extends Activity implements OnClickListener{
     final String LOG_TAG = "myLogs";
@@ -70,7 +69,7 @@ public class MainTwo extends Activity implements OnClickListener{
             }
             // закрываем подключение к БД
             dbHelper.close();
-            Intent intent = new Intent(MainTwo.this, ModeSelection.class);
+            Intent intent = new Intent(MainTwo.this, One_level.class);
             startActivity(intent);
             //
             //c.getCount();
