@@ -15,7 +15,6 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class MainTwo extends Activity implements OnClickListener{
     final String LOG_TAG = "myLogs";

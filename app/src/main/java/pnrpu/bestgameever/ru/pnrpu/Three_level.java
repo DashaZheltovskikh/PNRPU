@@ -55,7 +55,7 @@ public class Three_level extends AppCompatActivity {
                 // while (startButton.isPressed() == true) {
                 button_exit.setBackgroundResource(R.drawable.button_exit_press);
                 try {
-                    Intent intent = new Intent(Three_level.this, ModeSelection.class);
+                    Intent intent = new Intent(Three_level.this, Reclam.class);
                     startActivity(intent);
                     finish();
                 }

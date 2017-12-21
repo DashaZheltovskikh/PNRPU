@@ -1,17 +1,10 @@
 package pnrpu.bestgameever.ru.pnrpu;
 
 import android.content.Intent;
-import android.database.CharArrayBuffer;
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.Display;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-
-import java.time.OffsetDateTime;
 
 public class SavedGames extends AppCompatActivity {
     static String name3 = "test3";
@@ -41,6 +34,7 @@ public class SavedGames extends AppCompatActivity {
                 yesButtonSG.setBackgroundResource(R.drawable.yes_button_press);
                 yes[0] = 1;
                 try {
+<<<<<<< HEAD
                     if (b3[0] == 1 && yes[0] == 1) {
                         Intent intent = new Intent(SavedGames.this, One_level.class);
                         startActivity(intent);
@@ -49,6 +43,14 @@ public class SavedGames extends AppCompatActivity {
                     /*Intent intent = new Intent(SavedGames.this, One_level.class);
                     startActivity(intent);
                     finish();*/
+=======
+
+                    if (b3[0] == 1 && yes[0] == 1) {
+                        Intent intent = new Intent(SavedGames.this,One_level.class);
+                        startActivity(intent);
+                        finish();
+                    }
+>>>>>>> VM
                 }
                 catch (Exception e) {
                     e.printStackTrace();
